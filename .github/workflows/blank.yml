@@ -29,6 +29,6 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         /root/WORK/gitTest/test-jos/test1/.github/script/test.sh
+         /home/jos/test.sh
       shell: bash
 

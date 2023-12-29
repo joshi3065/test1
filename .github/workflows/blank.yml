@@ -29,7 +29,6 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         chmod +x script/test.sh
          /root/WORK/gitTest/test-jos/test1/.github/script/test.sh
       shell: bash
 

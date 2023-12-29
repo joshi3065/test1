@@ -6,12 +6,15 @@ on:
       partition:
         required: true
         type: string
+        default: 'warning'
       G:
         required: true
         type: string
+        default: 'warning'
       N:
         required: true
-        type: string  
+        type: string
+        default: 'warning'
 
 jobs:
   do_the_thing:

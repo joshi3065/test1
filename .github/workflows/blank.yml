@@ -21,18 +21,13 @@ on:
         default: 'warning'
 
 jobs:
-  do_the_thing:
-    runs-on: ubuntu-latest
+  run_tests:
+    runs-on: ubuntu-20.04
     steps:
-    - name: Mask Password
+    - uses: actions/checkout@v2
+    - name: Run script file
       run: |
-        API_PASSWORD=$(jq -r '.inputs.password' $GITHUB_EVENT_PATH)
-        echo ::add-mask::$API_PASSWORD
-        echo API_PASSWORD=$API_PASSWORD >> $GITHUB_ENV
-    - name: Call API
-      uses: fjogeleit/http-request-action@v1.11.1
-      with:
-        url: https://www.example.com/api/awesome/stuff
-        method: 'POST'
-        username: ${{ github.event.inputs.username }}
-        password: ${{ env.API_PASSWORD }}
+         chmod +x ./public/scripts/test.sh
+         ./public/scripts/test.sh
+      shell: bash
+

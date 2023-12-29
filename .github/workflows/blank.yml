@@ -23,9 +23,9 @@ on: push
 
 jobs:
   run_tests:
-    runs-on: ubuntu-20.04
+    runs-on:
+      - self-hosted
     steps:
-    - uses: actions/checkout@v2
     - name: Run script file
       run: |
          chmod +x ./public/scripts/test.sh

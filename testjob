@@ -1,0 +1,23 @@
+#!/bin/bash
+# Job name:
+#SBATCH --job-name=test
+#SBATCH -o testjob.out
+#
+# Partition:
+#SBATCH --partition=3090
+#
+# Request one node:
+#SBATCH --nodes=1
+#
+# Specify one task:
+#
+# Number of processors for single task needed for use case (example):
+#
+# Wall clock limit:
+#
+## Command(s) to run (example):
+
+#SBATCH --gres=gpu:1
+
+
+nvidia-smi

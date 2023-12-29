@@ -29,6 +29,6 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         /home/nfs/jo/test1/.github/script/test.sh
+         /usr/local/bin/sbatch /home/nfs/jo/test1/testjob
       shell: bash
 

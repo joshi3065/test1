@@ -30,6 +30,6 @@ jobs:
       run: |
          pwd
          chmod +x script/test.sh
-         ./public/scripts/test.sh
+         /root/WORK/gitTest/test-jos/test1/.github/script/test.sh
       shell: bash
 

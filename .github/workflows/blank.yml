@@ -1,24 +1,25 @@
 name: Call API Example
 
-on:
-  workflow_dispatch:
-    inputs:
-      partition:
-        required: true
-        type: choice
-        default: 'aaa'
-        options:
-        - aaa
-        - bbb
-
-      G:
-        required: true
-        type: string
-        default: 'warning'
-      N:
-        required: true
-        type: string
-        default: 'warning'
+on: push
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      partition:
+#        required: true
+#        type: choice
+#        default: 'aaa'
+#        options:
+#        - aaa
+#        - bbb
+#
+#      G:
+#        required: true
+#        type: string
+#        default: 'warning'
+#      N:
+#        required: true
+#        type: string
+#        default: 'warning'
 
 jobs:
   run_tests:

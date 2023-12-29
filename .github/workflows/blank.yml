@@ -28,7 +28,7 @@ jobs:
     steps:
     - name: Run script file
       run: |
-         chmod +x ./scripts/test.sh
+         chmod +x ./script/test.sh
          ./public/scripts/test.sh
       shell: bash
 

@@ -3,12 +3,15 @@ name: Call API Example
 on:
   workflow_dispatch:
     inputs:
-      username:
+      partition:
         required: true
         type: string
-      password:
+      G:
         required: true
         type: string
+      N:
+        required: true
+        type: string  
 
 jobs:
   do_the_thing:

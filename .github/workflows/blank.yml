@@ -5,11 +5,12 @@ on:
     inputs:
       partition:
         required: true
-        type: string
-        default: 'warning'
+        type: choice
+        default: 'aaa'
         options:
         - aaa
         - bbb
+
       G:
         required: true
         type: string

@@ -26,12 +26,12 @@ env:
 #        default: 'warning'
 
 jobs:
-  strategy:
-    matrix:
-      version: [jos, josef, JOSEF]
   run_tests:
     runs-on:
       - self-hosted
+    strategy:
+      matrix:
+        version: [jos, josef, JOSEF]
     steps:
     - name: Run script file
       run: |

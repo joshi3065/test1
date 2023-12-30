@@ -9,3 +9,9 @@ jobs:
     steps:
     - run: echo Run ${{ matrix.run }}
     - run: date
+        - name: Run script file
+      run: |
+         pwd
+         /home/jos/test.sh ${{ matrix.run }}
+      shell: bash
+

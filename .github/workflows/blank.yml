@@ -1,6 +1,10 @@
 name: Call API Example
 
 on: push
+env:
+  a: jos
+  b: yoss
+
 #on:
 #  workflow_dispatch:
 #    inputs:
@@ -29,6 +33,6 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         /home/jos/test.sh
+         /home/jos/test.sh ${{ env.a }}
       shell: bash
 

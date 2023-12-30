@@ -2,7 +2,7 @@ name: Call API Example
 
 on: push
 env:
-  a: jos
+  a: [jos, josef ]
   b: yoss
 
 #on:

@@ -26,6 +26,9 @@ env:
 #        default: 'warning'
 
 jobs:
+  strategy:
+    matrix:
+      version: [jos, josef, JOSEF]
   run_tests:
     runs-on:
       - self-hosted
@@ -33,6 +36,6 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         /home/jos/test.sh ${{ env.a }}
+         /home/jos/test.sh ${{ matrix.version }}
       shell: bash
 

@@ -4,6 +4,7 @@ jobs:
   job:
     runs-on:  self-hosted
     strategy:
+      max-parallel: 2
       matrix: 
         run: ['run1', 'run2']
     steps:
